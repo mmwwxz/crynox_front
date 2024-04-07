@@ -1,0 +1,36 @@
+.US {
+	position: relative;
+	.content {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.text {
+			width: 40%;
+			p {
+				font-size: 24px;
+				font-weight: 500;
+				line-height: 34px;
+			}
+			span {
+				color: #5cb1ff;
+			}
+			@media (max-width: 900px) {
+				width: 100%;
+				text-align: center;
+			}
+		}
+		img {
+			width: 40%;
+			border-radius: 20px;
+			object-fit: contain;
+			@media (max-width: 900px) {
+				width: 100%;
+				margin: 20px;
+			}
+		}
+		padding-bottom: 100px;
+		@media (max-width: 900px) {
+			flex-direction: column;
+		}
+	}
+}

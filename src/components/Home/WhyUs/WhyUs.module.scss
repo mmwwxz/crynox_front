@@ -1,0 +1,63 @@
+.WhyUs {
+	min-height: 780px;
+	.content {
+		margin-top: 50px;
+		display: flex;
+		.boxImg {
+			width: 45%;
+			object-fit: contain;
+			object-position: center center;
+			margin-bottom: 20px;
+		}
+		.boxText {
+			width: 55%;
+			> div {
+				display: flex;
+				align-items: center;
+				margin: 20px 0;
+			}
+			p {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.numbers {
+				font-size: 128px;
+				font-weight: 600;
+				color: #3b86ff;
+				margin-right: 20px;
+			}
+			a {
+				padding: 10px 30px;
+				border: 0.5px solid #5557df;
+				border-radius: 10px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 850px) {
+		.content {
+			flex-direction: row;
+			justify-content: space-between;
+			.boxImg {
+				display: none;
+			}
+			.boxText {
+				width: 100%;
+				text-align: center;
+				> div {
+					flex-direction: row;
+					align-items: center;
+				}
+				.numbers {
+					font-size: 128px;
+					margin-bottom: 0;
+					margin-right: 20px;
+				}
+				p {
+					border: 2px solid;
+					padding: 10px;
+				}
+			}
+		}
+	}
+}

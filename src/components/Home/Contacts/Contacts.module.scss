@@ -1,0 +1,154 @@
+.Contacts {
+	min-height: 674px;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	align-items: center;
+	.form {
+		max-width: 500px;
+		width: 35%;
+		border: 2px solid #ffffff;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		height: fit-content;
+		padding: 40px;
+
+		h4 {
+			margin-bottom: 10px;
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 32px;
+			@media (max-width: 1200px) {
+				font-size: 25px;
+			}
+		}
+		span {
+			color: gray;
+			@media (max-width: 1200px) {
+				font-size: 18px;
+			}
+		}
+		input {
+			background-image: url('../../../assets/HomePage/Input.png');
+			border-radius: 20px !important;
+		}
+		input,
+		button {
+			width: 355.27px;
+			height: 65.79px;
+			padding: 20.4px 0px 23.03px 0px;
+			border-radius: 13.16px;
+			margin: 10px 0;
+			text-align: center;
+			@media (max-width: 1200px) {
+				width: 100%;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		::placeholder {
+			color: #757575;
+		}
+		button {
+			background: #3b86ff;
+			border-radius: 30px;
+			border: transparent;
+			span {
+				margin: auto;
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 24px;
+				color: #ffffff;
+			}
+			margin-bottom: 0;
+			margin: 0 auto;
+		}
+		> :last-child {
+			> :last-child:hover {
+				background: #5355d5;
+			}
+		}
+		.Flex {
+			width: 100%;
+		}
+		@media (max-width: 1200px) {
+			width: 45%;
+		}
+		@media (max-width: 800px) {
+			width: 100%;
+		}
+	}
+	.text {
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 25px;
+			span {
+				color: #3b86ff;
+			}
+		}
+		h4 {
+			font-size: 35px;
+			font-weight: 700;
+			line-height: 52px;
+			@media (max-width: 1000px) {
+				font-size: 3vw;
+			}
+		}
+		.hr {
+			border: 1px solid #8f8f8f;
+			width: 60%;
+			margin: 25px 0;
+		}
+		.icons {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			button {
+				border: none;
+				margin-top: 10px;
+				border-radius: 25px;
+				padding: 5px 20px;
+				border-radius: 25px;
+				display: flex;
+				align-items: center;
+				img {
+					width: 32px;
+					height: 32px;
+				}
+			}
+			.WhatsApp {
+				background: #09e22c;
+			}
+			.Telegram {
+				background: #039be5;
+			}
+			.Instagram {
+				background: linear-gradient(
+					84.85deg,
+					#ffc225 7.21%,
+					#ff7850 29.15%,
+					#f03480 52.24%,
+					#dd179e 72.04%,
+					#b40bbf 100%
+				);
+			}
+		}
+		@media (max-width: 1200px) {
+			width: 45%;
+			margin: 25px auto;
+		}
+		@media (max-width: 800px) {
+			width: 100%;
+			margin: 10px auto;
+			border: 0.1px solid;
+			padding: 40px;
+		}
+	}
+	@media (max-width: 800px) {
+		flex-direction: column;
+	}
+}

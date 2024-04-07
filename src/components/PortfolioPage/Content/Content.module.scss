@@ -1,0 +1,59 @@
+.Content {
+	width: 90%;
+
+	.data {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.item {
+			width: 45%;
+			margin: 10px 0;
+			border: 1px solid #3b86ff;
+			border-radius: 10px;
+			padding: 10px 20px;
+			.top {
+				display: flex;
+				position: relative;
+				height: 230px;
+				img {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					z-index: -1;
+					object-fit: cover;
+				}
+				h4 {
+					margin-top: auto;
+					width: 100%;
+					padding: 5px;
+					background: #2e2e2e66;
+					font-size: 35px;
+					font-weight: 300;
+				}
+			}
+			p {
+				font-size: 20px;
+				font-weight: 500;
+				margin-top: 10px;
+			}
+			.btn {
+				display: flex;
+				justify-content: end;
+				button {
+					border: 0.77px solid #5557df;
+					padding: 5px 20px;
+					background: transparent;
+					border-radius: 5px;
+					font-size: 15px;
+					font-weight: 400;
+				}
+			}
+			@media (max-width: 1000px) {
+				width: 100%;
+			}
+		}
+	}
+	@media (max-width: 1000px) {
+		width: 100%;
+	}
+}

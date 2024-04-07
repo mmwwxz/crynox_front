@@ -1,0 +1,22 @@
+.OurWorks {
+	min-height: 1952px;
+	.ourWorkstems {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.ourWorkstem {
+			width: 100%;
+			margin: 20px;
+			img {
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+		@media (max-width: 900px) {
+			min-height: 100%;
+		}
+	}
+	@media (max-width: 900px) {
+		min-height: 100%;
+	}
+}

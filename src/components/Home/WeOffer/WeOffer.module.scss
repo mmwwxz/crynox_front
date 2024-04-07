@@ -1,0 +1,63 @@
+.WeOffer {
+	min-height: 850px;
+	.text {
+		margin: 50px auto;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 18px;
+		border: #6164ff 1px solid;
+		border-radius: 10px 15px;
+		padding: 10px;
+		width: 600px;
+		span {
+			color: #ff9990;
+		}
+		@media (max-width: 900px) {
+			width: 90%;
+		}
+	}
+	.offerItems {
+		display: flex !important;
+		align-items: center;
+		justify-content: space-between !important;
+		text-align: center;
+
+		.offerItem {
+			background: #5355d5;
+			border-radius: 20px;
+			min-height: 450px;
+			margin: 0 10px;
+			width: 25% !important;
+			@media (max-width: 900px) {
+				min-height: 400px;
+			}
+			@media (max-width: 800px) {
+				width: 45% !important;
+				margin: 10px !important;
+			}
+			@media (max-width: 400px) {
+				width: 90% !important;
+				margin: 10px !important;
+			}
+			h4 {
+				margin: 15px 0;
+				font-size: 25px;
+				line-height: 30px;
+				@media (max-width: 900px) {
+					font-size: 18px;
+				}
+			}
+			img,
+			h4,
+			p {
+				width: 80%;
+				margin: 0 auto;
+			}
+			p {
+				@media (max-width: 900px) {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

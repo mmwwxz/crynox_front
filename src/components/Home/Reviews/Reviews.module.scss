@@ -1,0 +1,53 @@
+.Reviews {
+	min-height: 645px;
+	.reviewsItems {
+		display: flex !important;
+		align-items: center;
+		.reviewsItem {
+			border-radius: 20px;
+			min-height: 360px;
+			margin: 0 10px;
+			width: calc(30% - 20px) !important;
+			padding: 50px 0;
+			position: relative !important;
+			@media (max-width: 800px) {
+				width: 45% !important;
+				margin: 10px !important;
+			}
+			@media (max-width: 400px) {
+				width: 90% !important;
+				margin: 10px !important;
+			}
+			h4 {
+				margin: 10px 0;
+				font-size: 25px;
+			}
+			span,
+			p {
+				font-weight: 200;
+			}
+			> div {
+				width: 70%;
+				margin: 0 auto;
+			}
+			.companyLogo {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				object-position: center center;
+			}
+			.userData {
+				display: flex;
+				align-items: center;
+				margin-top: 20px;
+				span {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}

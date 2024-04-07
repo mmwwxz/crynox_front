@@ -1,0 +1,155 @@
+.Сarousel {
+	min-height: 500px;
+	.Сarousel__slide {
+		background: #000;
+		display: flex !important;
+		align-items: center;
+		justify-content: flex-end;
+		text-align: end;
+		min-height: 570px;
+		// background: url('../../../assets/HomePage/MainImage.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0;
+		padding: 20px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			min-height: auto;
+		}
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+
+		@media (max-width: 768px) {
+			width: 100%;
+			text-align: center;
+		}
+
+		p {
+			font-size: 18px;
+			font-weight: 400;
+			margin: 20px 0;
+			@media (max-width: 768px) {
+				margin: 10px 0;
+			}
+		}
+
+		.btns {
+			display: flex;
+			justify-content: space-around;
+			margin: 20px 0 0 20px;
+			button {
+				margin: 0 10px;
+				font-size: 20px !important;
+				display: flex;
+				align-items: center;
+			}
+			> :nth-child(1) {
+				background: #5355d5;
+				border-radius: 6px;
+				svg {
+					fill: #00ff19 !important;
+				}
+			}
+
+			@media (max-width: 768px) {
+				width: 100%;
+				justify-content: center;
+				margin-top: 10px;
+			}
+
+			button {
+				font-size: 17px;
+				height: 100%;
+				border: 1px solid #5355d5;
+				background: #5355d5;
+				display: flex;
+				align-items: center;
+				padding: 5px 10px;
+
+				@media (max-width: 768px) {
+					font-size: 14px;
+					padding: 5px 15px;
+				}
+			}
+
+			button:first-child {
+				background: transparent;
+			}
+
+			button:first-child:hover {
+				background: #5355d5;
+			}
+
+			button:last-child:hover {
+				background: transparent;
+			}
+		}
+	}
+
+	.boxImg {
+		width: 50%;
+		height: 400px;
+
+		@media (max-width: 768px) {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.prevArrow {
+		left: 0;
+	}
+
+	.nextArrow {
+		right: 0;
+	}
+}
+@media screen and (max-width: 900px) {
+	.Сarousel {
+		min-height: 400px;
+		&__text {
+			width: 50%;
+		}
+		.boxImg {
+			width: 50%;
+		}
+	}
+}
+@media screen and (max-width: 850px) {
+	.Сarousel {
+		&__text {
+			width: 100%;
+		}
+		.boxImg {
+			display: none;
+		}
+	}
+}
+.customArrow {
+	background-color: #5355d5;
+	border-color: transparent;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	font-size: 16px;
+
+	@media (max-width: 768px) {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.customArrow:hover {
+	background-color: #3b86ff;
+	border-color: transparent;
+}
+
+.customArrow:focus {
+	background-color: #3b86ff;
+	border-color: transparent;
+}
